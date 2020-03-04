@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6537b24a-f99a-409d-80e8-d150c7d4134a" name="Default Changelist" comment="" />
+    <list default="true" id="6537b24a-f99a-409d-80e8-d150c7d4134a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task3/META-INF/Task3.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/IPersonSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/IPersonSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/Sex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/SortHelper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/SortHelper$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/SortHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/SortHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/sortVariations/BubbleSortMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/sortVariations/BubbleSortMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/sortVariations/SortVariations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/sortVariations/StupidSortMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/sortVariations/StupidSortMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/IPersonSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/IPersonSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/Sex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/entities/Sex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/SortHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/SortHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/sortVariations/BubbleSortMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/sortVariations/BubbleSortMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/sortVariations/SortVariations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/SortVariations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/sortVariations/StupidSortMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/sortVariations/StupidSortMethods.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +37,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1YRtjJnktdwcsteCYjzB0IADxdu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,6 +49,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
@@ -85,38 +111,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="917" y="132" width="601" height="692" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1583262865483" />
-    <state width="1481" height="265" key="GridCell.Tab.0.bottom" timestamp="1583279015462">
+    <state width="1481" height="214" key="GridCell.Tab.0.bottom" timestamp="1583339693932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1481" height="265" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583279015462" />
-    <state width="1481" height="265" key="GridCell.Tab.0.center" timestamp="1583279015462">
+    <state width="1481" height="214" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583339693932" />
+    <state width="1481" height="214" key="GridCell.Tab.0.center" timestamp="1583339693931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1481" height="265" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583279015462" />
-    <state width="1481" height="265" key="GridCell.Tab.0.left" timestamp="1583279015462">
+    <state width="1481" height="214" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583339693931" />
+    <state width="1481" height="214" key="GridCell.Tab.0.left" timestamp="1583339693931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1481" height="265" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583279015462" />
-    <state width="1481" height="265" key="GridCell.Tab.0.right" timestamp="1583279015462">
+    <state width="1481" height="214" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583339693931" />
+    <state width="1481" height="214" key="GridCell.Tab.0.right" timestamp="1583339693931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1481" height="265" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583279015462" />
-    <state width="1481" height="265" key="GridCell.Tab.1.bottom" timestamp="1583279015462">
+    <state width="1481" height="214" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583339693931" />
+    <state width="1481" height="214" key="GridCell.Tab.1.bottom" timestamp="1583339693932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1481" height="265" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583279015462" />
-    <state width="1481" height="265" key="GridCell.Tab.1.center" timestamp="1583279015462">
+    <state width="1481" height="214" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583339693932" />
+    <state width="1481" height="214" key="GridCell.Tab.1.center" timestamp="1583339693932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1481" height="265" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583279015462" />
-    <state width="1481" height="265" key="GridCell.Tab.1.left" timestamp="1583279015462">
+    <state width="1481" height="214" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583339693932" />
+    <state width="1481" height="214" key="GridCell.Tab.1.left" timestamp="1583339693932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1481" height="265" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583279015462" />
-    <state width="1481" height="265" key="GridCell.Tab.1.right" timestamp="1583279015462">
+    <state width="1481" height="214" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583339693932" />
+    <state width="1481" height="214" key="GridCell.Tab.1.right" timestamp="1583339693932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1481" height="265" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583279015462" />
+    <state width="1481" height="214" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583339693932" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1583007698351">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

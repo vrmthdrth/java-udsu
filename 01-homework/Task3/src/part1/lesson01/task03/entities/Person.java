@@ -1,4 +1,4 @@
-package part1.lesson01.task03;
+package part1.lesson01.task03.entities;
 
 /**
  * A class containing properties and methods for Person objects.
@@ -105,6 +105,6 @@ public class Person {
      */
     @Override
     public String toString() {
-        return "Age: " + this.age + ", Sex: " + this.sex.getSex() + ", Name: " + this.name;
+        return "Age: " + this.age + ", Sex: " + this.sex.getValue() + ", Name: " + this.name;
     }
 }

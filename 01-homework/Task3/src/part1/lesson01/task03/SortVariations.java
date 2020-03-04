@@ -1,4 +1,4 @@
-package part1.lesson01.task03.sortVariations;
+package part1.lesson01.task03;
 
 /**
  * An enumeration to define specific sort types.

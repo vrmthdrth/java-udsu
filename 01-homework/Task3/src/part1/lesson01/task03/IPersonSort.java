@@ -1,5 +1,7 @@
 package part1.lesson01.task03;
 
+import part1.lesson01.task03.entities.Person;
+
 /**
  * An interface that contains methods of sorting Person objects array.
  */

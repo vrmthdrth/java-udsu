@@ -1,8 +1,8 @@
 package part1.lesson01.task03;
 
+import part1.lesson01.task03.entities.Person;
 import part1.lesson01.task03.sortVariations.BubbleSortMethods;
 import part1.lesson01.task03.sortVariations.StupidSortMethods;
-import part1.lesson01.task03.sortVariations.SortVariations;
 
 import java.util.Scanner;
 
@@ -10,7 +10,6 @@ import java.util.Scanner;
  * A class containing additional methods which are necessary to initialize and sort Person objects arrays
  */
 public class SortHelper {
-
     /**
      * A method of choosing sort method depending on sorting criterion parameter
      * @param sortVar Sort criterion parameter
@@ -42,13 +41,10 @@ public class SortHelper {
      * @return Initialized array
      */
     public static Person[] initializePersonArray(int arraySize){
-
         if(arraySize < 0){
             throw new IndexOutOfBoundsException("arraySize parameter cant be less than 0");
         }
-
         Person[] personArray = new Person[arraySize];
-
         Scanner input = new Scanner(System.in);
         for(int i = 0; i < personArray.length; i++){
             boolean keep = true;
@@ -61,7 +57,6 @@ public class SortHelper {
                 System.out.print("Name: ");
                 String name = input.next();
                 personArray[i] = new Person(age, sex, name);
-
                 keep = !areAgeAndNameUnique(personArray, i);
                 if(keep){
                     System.out.println("Exception: Age and Name values must be unique in array.");
@@ -84,33 +79,24 @@ public class SortHelper {
         if(arraySize < 0){
             throw new IndexOutOfBoundsException("arraySize parameter cant be less than 0");
         }
-
         Person[] personArray = new Person[arraySize];
         char[] upperLettersArray = "ABCDEFGHIGKLMNOPQRSTUVWXYZ".toCharArray();
         char[] lowerLettersArray = "abcdefghigklmnopqrstuvwxyz".toCharArray();
-
         for(int i = 0; i < personArray.length; i++){
             boolean keep = true;
             while(keep){
-
                 int randWordLength = (int)(Math.random() * 9) + 2;
-
                 String randName = "";
                 for(int cnt = 0; cnt < randWordLength; cnt++){
                     randName += (cnt != 0) ? lowerLettersArray[(int)(Math.random() * 26)] : upperLettersArray[(int)(Math.random() * 26)];
                 }
-
                 int randAge = (int)(Math.random() * 101);
-
                 String randSex = "";
                 randSex = (int)((Math.random() * 200) - 100) >= 0 ? "man" : "woman";
-
                 personArray[i] = new Person(randAge, randSex, randName);
-
                 keep = !areAgeAndNameUnique(personArray, i);
             }
         }
-
         return personArray;
     }
 

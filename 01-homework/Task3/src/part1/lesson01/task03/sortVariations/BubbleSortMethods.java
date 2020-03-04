@@ -1,14 +1,13 @@
 package part1.lesson01.task03.sortVariations;
 
 import part1.lesson01.task03.IPersonSort;
-import part1.lesson01.task03.Person;
+import part1.lesson01.task03.entities.Person;
 import part1.lesson01.task03.SortHelper;
 
 /**
  * A class containing bubble sort methods of sorting Person objects arrays
  */
 public class BubbleSortMethods implements IPersonSort {
-
     /**
      * A bubble sort method in "men are first" order
      * @param personArray Person objects array

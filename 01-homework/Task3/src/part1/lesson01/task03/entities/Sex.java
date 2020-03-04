@@ -1,4 +1,4 @@
-package part1.lesson01.task03;
+package part1.lesson01.task03.entities;
 
 /**
  * A class containing properties and methods for Sex objects
@@ -16,15 +16,15 @@ public class Sex {
     private static final String WOMAN = "woman";
 
     /**
-     * A string constant defining a gender of a concrete object
+     * A property defining a sex of a concrete object
      */
     private String value;
 
     /**
      * Gets a {@link Sex#value} value
-     * @return Sex
+     * @return Value of Sex
      */
-    public String getSex(){
+    public String getValue(){
         return this.value;
     }
 
@@ -54,5 +54,4 @@ public class Sex {
     public String toString() {
         return this.value;
     }
-
 }
