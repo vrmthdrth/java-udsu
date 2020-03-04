@@ -131,15 +131,15 @@ public class SortHelper {
      * @return "true" if this pair is unique, "false" in the opposite case
      */
     public static boolean areAgeAndNameUnique(Person[] personArray, int i){
-        if( i != 0 ){
+        if(i < 0) {
+            throw new IllegalArgumentException("Array index can not be negative.");
+        }
+        else{
             for(int j = 0; j < i ; j++){
                 if(personArray[i].getAge() == personArray[j].getAge() && personArray[i].getName().equals(personArray[j].getName())){
                     return false;
                 }
             }
-        }
-        else{
-            return true;
         }
         return true;
     }
