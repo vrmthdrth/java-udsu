@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="199ccc4a-c17e-4f31-9f5c-40dd3d444ea6" name="Default Changelist" comment="" />
+    <list default="true" id="199ccc4a-c17e-4f31-9f5c-40dd3d444ea6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Task2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task01/ExceptionsClassTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task01/ExceptionsClassTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task01/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task01/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/out/production/Task2/part1/lesson01/task02/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/out/production/Task2/part1/lesson01/task02/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/out/production/Task2/part1/lesson01/task02/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/out/production/Task2/part1/lesson01/task02/Methods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/src/part1/lesson01/task02/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/src/part1/lesson01/task02/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/src/part1/lesson01/task02/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/src/part1/lesson01/task02/Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task3/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +24,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1YeVhzKTXD3YfPoOvuYnN3gixsp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />

@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6537b24a-f99a-409d-80e8-d150c7d4134a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task3/META-INF/Task3.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/IPersonSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/IPersonSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/Sex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/SortHelper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/SortHelper$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/SortHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/SortHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/sortVariations/BubbleSortMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/sortVariations/BubbleSortMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/sortVariations/SortVariations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/sortVariations/StupidSortMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task3/part1/lesson01/task03/sortVariations/StupidSortMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/IPersonSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/IPersonSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/entities/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/Sex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/entities/Sex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/SortHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/SortHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/sortVariations/BubbleSortMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/sortVariations/BubbleSortMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/sortVariations/SortVariations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/SortVariations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/lesson01/task03/sortVariations/StupidSortMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/lesson01/task03/sortVariations/StupidSortMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Task2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/src/part1/lesson01/task02/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/src/part1/lesson01/task02/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task2/src/part1/lesson01/task02/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Task2/src/part1/lesson01/task02/Methods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

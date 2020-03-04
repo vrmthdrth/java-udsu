@@ -6,11 +6,10 @@ import java.util.Scanner;
  * A class containing different methods.
  */
 public class ExceptionsClassTask {
-
     /**
      * A method that throws different exceptions.
      */
-    public static void HelloWorld(){
+    public static void helloWorld(){
         Scanner input = new Scanner(System.in);
         System.out.println("Введите\n 1 для вызова ArrayIndexOutOfBoundsException\n 2 для вызова NullPointerException\n 3 для вызова IllegalArgumentException\n");
         while(true){
