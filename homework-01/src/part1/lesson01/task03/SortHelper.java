@@ -41,8 +41,8 @@ public class SortHelper {
      * @return Initialized array
      */
     public static Person[] initializePersonArray(int arraySize){
-        if(arraySize < 0){
-            throw new IndexOutOfBoundsException("arraySize parameter cant be less than 0");
+        if(arraySize <= 0){
+            throw new IndexOutOfBoundsException("arraySize parameter cant be less than 1");
         }
         Person[] personArray = new Person[arraySize];
         Scanner input = new Scanner(System.in);
@@ -76,8 +76,8 @@ public class SortHelper {
      * @return Initialized array
      */
     public static Person[] initializeRandomPersonArray(int arraySize){
-        if(arraySize < 0){
-            throw new IndexOutOfBoundsException("arraySize parameter cant be less than 0");
+        if(arraySize <= 0){
+            throw new IndexOutOfBoundsException("arraySize parameter cant be less than 1");
         }
         Person[] personArray = new Person[arraySize];
         char[] upperLettersArray = "ABCDEFGHIGKLMNOPQRSTUVWXYZ".toCharArray();
@@ -116,8 +116,8 @@ public class SortHelper {
      * @param index Index of current Person
      */
     public static void swapCurrentPersonWithPrevious(Person[] personArray, int index){
-        if(index == 0){
-            throw new IndexOutOfBoundsException("'index' parameter can not be equal 0");
+        if(index <= 0){
+            throw new IndexOutOfBoundsException("'index' parameter can not be less than 1");
         }
         Person bubblePerson = personArray[index - 1];
         personArray[index - 1] = personArray[index];

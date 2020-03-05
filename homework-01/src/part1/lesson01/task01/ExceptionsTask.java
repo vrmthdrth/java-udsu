@@ -5,13 +5,13 @@ import java.util.Scanner;
 /**
  * A class containing different methods.
  */
-public class ExceptionsClassTask {
+public class ExceptionsTask {
     /**
      * A method that throws different exceptions.
      */
     public static void helloWorld(){
         Scanner input = new Scanner(System.in);
-        System.out.println("Введите\n 1 для вызова ArrayIndexOutOfBoundsException\n 2 для вызова NullPointerException\n 3 для вызова IllegalArgumentException\n");
+        System.out.println("Enter\n 1 to throw ArrayIndexOutOfBoundsException\n 2 to throw NullPointerException\n 3 to throw IllegalArgumentException\n");
         while(true){
             switch(input.next()){
                 case "1":
@@ -24,7 +24,8 @@ public class ExceptionsClassTask {
                 case "3":
                     throw new IllegalArgumentException();
                 default:
-                    System.out.println("Введите одно из предложенных чисел.");
+                    System.out.println("Hello, World!");
+                    break;
             }
         }
     }

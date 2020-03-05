@@ -5,12 +5,12 @@ import java.util.Scanner;
 /**
  * A class containing different methods.
  */
-public class Methods {
+public class SquareRootsTask {
     /**
      * A procedure to execute in main()
      */
     public static void mainCommand(){
-        int[] randomArray = initializeIntegerArray();
+        int[] randomArray = initializeAndDisplayIntegerArray();
         findNumbers(randomArray);
     }
 
@@ -18,7 +18,7 @@ public class Methods {
      * Initializes new integer array with values in integer range [-100, 100]
      * @return Array
      */
-    public static int[] initializeIntegerArray(){
+    public static int[] initializeAndDisplayIntegerArray(){
         Scanner input = new Scanner(System.in);
         System.out.println("Input array size:");
         int arraySize = input.nextInt();
@@ -26,6 +26,11 @@ public class Methods {
         for(int i = 0; i < arraySize; i++){
             randomNumbers[i] = (int)((Math.random() * 200) - 100);
         }
+        System.out.println("Array:");
+        for(int number: randomNumbers){
+            System.out.print(" " + number);
+        }
+        System.out.println();
         return randomNumbers;
     }
 
@@ -37,13 +42,13 @@ public class Methods {
      * @param array Array
      */
     public static void findNumbers(int[] array){
-        for(Integer k: array){
+        for(int k: array){
             Double q = Math.sqrt(k);
             if(q.isNaN()){
                 throw new ArithmeticException("An attempt to take a real root from a negative number");
             }
             else if(q.intValue() * q.intValue()  == k){
-                System.out.println(q.intValue() + " where k is " + k);
+                System.out.println("q = " + q.intValue() + ", k = " + k);
             }
         }
     }
