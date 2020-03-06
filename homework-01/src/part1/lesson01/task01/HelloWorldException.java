@@ -1,4 +1,13 @@
 package part1.lesson01.task01;
 
-public class HelloWorldException {
+/**
+ * New exception class.
+ */
+public class HelloWorldException extends Exception {
+    /**
+     * Creates a new instance of a HelloWorldException class
+     */
+    public HelloWorldException(){
+        super();
+    }
 }
