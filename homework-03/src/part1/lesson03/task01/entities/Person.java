@@ -1,4 +1,4 @@
-package part1.lesson01.task03.entities;
+package part1.lesson03.task01.entities;
 
 /**
  * A class containing properties and methods for Person objects.
