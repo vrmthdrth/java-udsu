@@ -14,5 +14,9 @@ public class Main {
         for(Pet pet: pci.getValues()){
             System.out.println(pet.toString());
         }
+
+        System.out.println( pci.getValueByName("Hudson").toString());
+        pci.changeNameById(93913, "Marienne");
+        System.out.println( pci.getValueById(93913).toString());
     }
 }

@@ -29,7 +29,7 @@ public class PetCardIndex {
         throw new IllegalArgumentException();
     }
 
-    private Pet getValueById(int id){
+    public Pet getValueById(int id){
         for(Pet pet: this.values){
             if(pet.getId() == id){
                 return pet;
@@ -59,13 +59,8 @@ public class PetCardIndex {
     }
 
     public void changeNameById(int id, String newName){
-        if(!this.isIdUnique(id)){
-            throw new IllegalArgumentException("This Id is not unique.");
-        }
-        else {
-            int index = this.values.indexOf(this.getValueById(id));
-            this.getValueById(id).setName(newName);
-        }
+      //  int index = this.values.indexOf(this.getValueById(id));
+        this.getValueById(id).setName(newName);
     }
 
     private boolean isIdUnique(int id){
