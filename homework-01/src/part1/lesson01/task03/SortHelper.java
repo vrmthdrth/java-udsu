@@ -170,7 +170,7 @@ public class SortHelper {
         }
         boolean keepSorting = true;
         while(keepSorting){
-            System.out.println("Choose a way of sort: (1 - bubble MEN FIRST, 2 - bubble DESCENDING AGE, 3 - bubble ASCENDING NAMES, 4 - stupid MEN FIRST, 5 - stupid DESCENDING AGE, 6 - stupid ASCENDING NAMES, other - EXIT)");
+            System.out.println("Choose a way of sort: (1 - bubble sort, 2 - stupid sort, other - EXIT)");
             String chosenSort = input.next();
             Person[] newPersonArray = new Person[personArray.length];
             for(int i = 0; i < personArray.length; i++){
@@ -180,22 +180,14 @@ public class SortHelper {
             long start = System.currentTimeMillis();
             switch(chosenSort){
                 case "1":
-                    sortedPersonArray = sortPersonArray(SortVariations.MEN_FIRST_BUBBLE, newPersonArray);
+                    sortedPersonArray = sortPersonArray(SortVariations.ASCENDING_BY_ALPHABET_BUBBLE, newPersonArray);
+                    sortedPersonArray = sortPersonArray(SortVariations.DESCENDING_BY_AGE_BUBBLE, sortedPersonArray);
+                    sortedPersonArray = sortPersonArray(SortVariations.MEN_FIRST_BUBBLE, sortedPersonArray);
                     break;
                 case "2":
-                    sortedPersonArray = sortPersonArray(SortVariations.DESCENDING_BY_AGE_BUBBLE, newPersonArray);
-                    break;
-                case "3":
-                    sortedPersonArray = sortPersonArray(SortVariations.ASCENDING_BY_ALPHABET_BUBBLE, newPersonArray);
-                    break;
-                case "4":
-                    sortedPersonArray = sortPersonArray(SortVariations.MEN_FIRST_STUPID, newPersonArray);
-                    break;
-                case "5":
-                    sortedPersonArray = sortPersonArray(SortVariations.DESCENDING_BY_AGE_STUPID, newPersonArray);
-                    break;
-                case "6":
                     sortedPersonArray = sortPersonArray(SortVariations.ASCENDING_BY_ALPHABET_STUPID, newPersonArray);
+                    sortedPersonArray = sortPersonArray(SortVariations.DESCENDING_BY_AGE_STUPID, sortedPersonArray);
+                    sortedPersonArray = sortPersonArray(SortVariations.MEN_FIRST_STUPID, sortedPersonArray);
                     break;
                 default:
                     System.out.println("bye");
