@@ -2,53 +2,46 @@ package part1.lesson03;
 
 import part1.lesson03.task01.entities.Pet;
 
-import java.util.List;
+import java.util.*;
 
 public class PetCardIndex {
 
-   public List<Pet> values;
+    private ArrayList<Pet> values = new ArrayList<>();
 
     public PetCardIndex(){
 
     }
 
-    public PetCardIndex(List<Pet> petList){
+    public PetCardIndex(ArrayList<Pet> petList){
         this.values = petList;
     }
 
-    public List<Pet> getValues(){
+    public ArrayList<Pet> getValues(){
         return this.values;
     }
 
-    public void setValues(List<Pet> petList){
-        this.values = petList;
-    }
-
-    public Pet getValueById(int id){
-        return this.values.get(id);
-    }
-
-    public Pet getValueByName(String name){
+    private int getIndexById(int id){
         for(Pet pet: this.values){
-            if(pet.)
+            if(pet.getId() == id){
+                return this.values.indexOf(pet);
+            }
         }
+        throw new IllegalArgumentException();
     }
 
-    public void setValueById(int id){
+    private Pet getValueById(int id){
         for(Pet pet: this.values){
-
+            if(pet.getId() == id){
+                return pet;
+            }
         }
-    }
-
-
-    public void setValue(int id, Pet pet){
-        this.values.set(id, pet);
+        throw new IllegalArgumentException();
     }
 
     public void addValue(Pet pet){
 
-        if(this.values.contains(pet)){
-            throw new IllegalArgumentException("Input Pet already is contain in PetCardIndex.values");
+        if(this.values != null && this.values.contains(pet)){
+            throw new IllegalArgumentException("Input Pet is already contain in PetCardIndex.values");
         }
         else{
             this.values.add(pet);
@@ -56,4 +49,41 @@ public class PetCardIndex {
 
     }
 
+    public Pet getValueByName(String name){
+        for(Pet pet: this.values){
+            if(pet.getName().equals(name)){
+                return pet;
+            }
+        }
+        throw new IllegalArgumentException();
+    }
+
+    public void changeNameById(int id, String newName){
+        if(!this.isIdUnique(id)){
+            throw new IllegalArgumentException("This Id is not unique.");
+        }
+        else {
+            int index = this.values.indexOf(this.getValueById(id));
+            this.getValueById(id).setName(newName);
+        }
+    }
+
+    private boolean isIdUnique(int id){
+        for(Pet pet: this.values){
+            if(pet.getId() == id){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public PetCardIndex sort(){
+
+
+
+        return this;
+    }
+
 }
+
+

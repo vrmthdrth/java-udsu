@@ -1,6 +1,7 @@
 package part1.lesson03.task01.entities;
 
 public class Pet {
+
     private int id;
     private String name;
     private Person owner;
@@ -17,13 +18,32 @@ public class Pet {
         return this.id;
     }
 
-    public void setId(int newId){
-        //isIdUnique
-        this.id = newId;
+    public String getName(){
+        return this.name;
     }
 
-    public void changeInformationById(){
-
+    public Person getOwner(){
+        return this.owner;
     }
 
+    public double getWeight(){
+        return this.weight;
+    }
+
+    public void setName(String newName){
+        this.name = newName;
+    }
+
+    public void setOwner(Person newOwner){
+        this.owner = newOwner;
+    }
+
+    public void setWeight(double newWeight){
+        this.weight = newWeight;
+    }
+
+    @Override
+    public String toString() {
+        return "Id: " + this.id + " Name: " + this.name + " Owner: " + this.owner.getName() + " Weight: " + this.weight;
+    }
 }
