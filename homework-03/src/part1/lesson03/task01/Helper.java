@@ -10,8 +10,14 @@ import part1.lesson03.task01.petCardIndex.PetCardIndex;
 import java.util.Scanner;
 import java.util.UUID;
 
+/**
+ * A class containing methods which are necessary to initialize and display data in console.
+ */
 public class Helper {
 
+    /**
+     * A procedure to execute in main() method
+     */
     public static void mainProcedure(){
         PetCardIndex petCardIndex = initializePetCardIndexFromConsole();
         displayPetCardIndexInConsole(petCardIndex);
@@ -70,6 +76,10 @@ public class Helper {
 
     }
 
+    /**
+     * A function to initialize PetCardIndex collection from console.
+     * @return PetCardIndex
+     */
     public static PetCardIndex initializePetCardIndexFromConsole(){
         PetCardIndex petCardIndex = new PetCardIndex();
         boolean keep = true;
@@ -84,6 +94,10 @@ public class Helper {
         return petCardIndex;
     }
 
+    /**
+     * A function to initialize Pet objects from console.
+     * @return Pet
+     */
     public static Pet initializePetFromConsole(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter pet's name");
@@ -94,6 +108,10 @@ public class Helper {
         return new Pet(petName, petOwner, petWeight);
     }
 
+    /**
+     * A function to initialize Person objects from console.
+     * @return Person
+     */
     public static Person initializeOwnerFromConsole(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter owner info(age, sex, name)");
@@ -106,6 +124,10 @@ public class Helper {
         return new Person(ownerAge, ownerSex, ownerName);
     }
 
+    /**
+     * A function to display PetCardIndex collection in console
+     * @param petCardIndex PetCardIndex
+     */
     public static void displayPetCardIndexInConsole(PetCardIndex petCardIndex){
         System.out.println("Pet list:");
         for(Pet pet: petCardIndex){
