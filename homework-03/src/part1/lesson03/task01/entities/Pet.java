@@ -10,7 +10,7 @@ public class Pet {
     public Pet(int uniqueId, String petName, Person personOwner, double petWeight){
         this.id = uniqueId;
         this.name = petName;
-        this.owner = personOwner;// new Person(personOwner.getAge(),personOwner.getSex().getValue(), personOwner.getName());
+        this.owner = personOwner;
         this.weight = petWeight;
     }
 

@@ -17,6 +17,8 @@ public class Main {
 
         System.out.println( pci.getValueByName("Hudson").toString());
         pci.changeNameById(93913, "Marienne");
+        pci.changeOwnerById(93913, new Person(99,"woman", "Sam"));
+        pci.changeWeightById(93913, 1488);
         System.out.println( pci.getValueById(93913).toString());
     }
 }

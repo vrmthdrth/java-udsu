@@ -1,5 +1,6 @@
 package part1.lesson03;
 
+import part1.lesson03.task01.entities.Person;
 import part1.lesson03.task01.entities.Pet;
 
 import java.util.*;
@@ -39,8 +40,7 @@ public class PetCardIndex {
     }
 
     public void addValue(Pet pet){
-
-        if(this.values != null && this.values.contains(pet)){
+        if(this.values.contains(pet)){
             throw new IllegalArgumentException("Input Pet is already contain in PetCardIndex.values");
         }
         else{
@@ -59,8 +59,15 @@ public class PetCardIndex {
     }
 
     public void changeNameById(int id, String newName){
-      //  int index = this.values.indexOf(this.getValueById(id));
         this.getValueById(id).setName(newName);
+    }
+
+    public void changeOwnerById(int id, Person newOwner){
+        this.getValueById(id).setOwner(newOwner);
+    }
+
+    public void changeWeightById(int id, double newWeight){
+        this.getValueById(id).setWeight(newWeight);
     }
 
     private boolean isIdUnique(int id){
@@ -80,5 +87,4 @@ public class PetCardIndex {
     }
 
 }
-
 
