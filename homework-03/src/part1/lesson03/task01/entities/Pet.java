@@ -5,8 +5,11 @@ import java.util.UUID;
 public class Pet {
 
     private UUID id;
+
     private String name;
+
     private Person owner;
+
     private double weight;
 
     public Pet(String petName, Person personOwner, double petWeight){
@@ -46,6 +49,6 @@ public class Pet {
 
     @Override
     public String toString() {
-        return "Id: " + this.id + " Name: " + this.name + " Owner: " + this.owner.getName() + " Weight: " + this.weight;
+        return "Id: " + this.id + ", Name: " + this.name + ", Owner: " + this.owner.getName() + ", Weight: " + this.weight;
     }
 }
