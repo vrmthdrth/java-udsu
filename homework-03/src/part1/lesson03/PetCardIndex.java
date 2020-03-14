@@ -5,7 +5,7 @@ import part1.lesson03.task01.entities.Pet;
 
 import java.util.*;
 
-public class PetCardIndex {
+/*public class PetCardIndex {
 
     private ArrayList<Pet> values = new ArrayList<>();
 
@@ -40,7 +40,7 @@ public class PetCardIndex {
     }
 
     public void addValue(Pet pet){
-        if(this.values.contains(pet)){
+        if(this.values.contains(pet) || this.isIdUnique(pet.getId()) || this.isNameUnique(pet.getName())){
             throw new IllegalArgumentException("Input Pet is already contain in PetCardIndex.values");
         }
         else{
@@ -79,6 +79,15 @@ public class PetCardIndex {
         return true;
     }
 
+    private boolean isNameUnique(String name){
+        for(Pet pet: this.values){
+            if(pet.getName().equals(name)){
+                return false;
+            }
+        }
+        return true;
+    }
+
     public PetCardIndex sort(){
 
 
@@ -88,3 +97,31 @@ public class PetCardIndex {
 
 }
 
+*/
+
+public class PetCardIndex extends ArrayList<Pet>{
+
+    @Override
+    public boolean add(Pet pet) {
+        if(super.contains(pet)){
+            throw new IllegalArgumentException("This pet is not unique in collection");
+        }
+        else{
+            return super.add(pet);
+        }
+    }
+
+    public Pet getPetByName(String petName){
+        for(Pet pet: this){
+            if(pet.getName().equals(petName)){
+                return pet;
+            }
+        }
+        throw new IllegalArgumentException("This collection does not contain any pet with Name: " + petName);
+    }
+
+    public void setPetValuesByIndex(UUID id){
+        
+    }
+
+}

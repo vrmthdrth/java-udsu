@@ -1,20 +1,22 @@
 package part1.lesson03.task01.entities;
 
+import java.util.UUID;
+
 public class Pet {
 
-    private int id;
+    private UUID id;
     private String name;
     private Person owner;
     private double weight;
 
-    public Pet(int uniqueId, String petName, Person personOwner, double petWeight){
-        this.id = uniqueId;
+    public Pet(String petName, Person personOwner, double petWeight){
+        this.id = UUID.randomUUID();
         this.name = petName;
         this.owner = personOwner;
         this.weight = petWeight;
     }
 
-    public int getId(){
+    public UUID getId(){
         return this.id;
     }
 
