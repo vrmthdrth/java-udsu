@@ -1,7 +1,11 @@
-package part1.lesson03;
+package part1.lesson03.task01;
 
+import part1.lesson03.task01.comparators.PetNameComparator;
+import part1.lesson03.task01.comparators.PetOwnerComparator;
+import part1.lesson03.task01.comparators.PetWeightComparator;
 import part1.lesson03.task01.entities.Person;
 import part1.lesson03.task01.entities.Pet;
+import part1.lesson03.task01.petCardIndex.PetCardIndex;
 
 import java.util.Scanner;
 import java.util.UUID;
@@ -9,13 +13,12 @@ import java.util.UUID;
 public class Helper {
 
     public static void mainProcedure(){
-
         PetCardIndex petCardIndex = initializePetCardIndexFromConsole();
         displayPetCardIndexInConsole(petCardIndex);
         boolean keepEditing = true;
         while(keepEditing){
             Scanner input = new Scanner(System.in);
-            System.out.println("what you want to do(1 - add pet, 2 - find by Name, 3.1 - change name by Id, 3.2 - change owner by Id, 3.3 - change weight by Id, 4 - sort and display, 5 - display, 6 - skip)");
+            System.out.println("what you want to do\n1 - add pet\n2 - find by Name\n3.1 - change name by Id\n3.2 - change owner by Id\n3.3 - change weight by Id\n4.1 sort by pet name and display\n4.2 - sort by owner name and display\n4.3 - sort by pet weight and display\n5 - display\n6 - skip)");
             UUID id;
             switch(input.next()){
                 case "1":
@@ -43,8 +46,16 @@ public class Helper {
                     System.out.println("Enter new weight");
                     petCardIndex.setPetWeightByUUID(id, input.nextInt());
                     break;
-                case "4":
-                   // petCardIndex.sort();
+                case "4.1":
+                    petCardIndex.sort(new PetNameComparator());
+                    displayPetCardIndexInConsole(petCardIndex);
+                    break;
+                case "4.2":
+                    petCardIndex.sort(new PetOwnerComparator());
+                    displayPetCardIndexInConsole(petCardIndex);
+                    break;
+                case "4.3":
+                    petCardIndex.sort(new PetWeightComparator());
                     displayPetCardIndexInConsole(petCardIndex);
                     break;
                 case "5":
@@ -53,8 +64,8 @@ public class Helper {
                 default:
                     break;
             }
-            System.out.println("Keep editing? y - yes");
-            keepEditing = input.next().equals("y");
+            System.out.println("Keep editing? n - no, other - yes");
+            keepEditing = !input.next().equals("n");
         }
 
     }

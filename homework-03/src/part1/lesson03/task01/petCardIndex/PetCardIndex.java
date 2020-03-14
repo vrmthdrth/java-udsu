@@ -1,4 +1,4 @@
-package part1.lesson03;
+package part1.lesson03.task01.petCardIndex;
 
 import part1.lesson03.task01.entities.Person;
 import part1.lesson03.task01.entities.Pet;
@@ -9,7 +9,7 @@ public class PetCardIndex extends ArrayList<Pet>{
 
     @Override
     public boolean add(Pet pet) {
-        if(super.contains(pet)){
+        if(super.contains(pet) || !this.isIdUnique(pet.getId()) || !this.isNameUnique(pet.getName())){
             throw new IllegalArgumentException("This pet is not unique in collection");
         }
         else{
@@ -27,6 +27,9 @@ public class PetCardIndex extends ArrayList<Pet>{
     }
 
     public void setPetNameByUUID(UUID id, String newName){
+        if(!this.isNameUnique(newName) || this.getPetByUUID(id).getName().equals(newName)){
+            throw new IllegalArgumentException("New name is not unique in this list.");
+        }
         this.getPetByUUID(id).setName(newName);
     }
 
@@ -45,6 +48,24 @@ public class PetCardIndex extends ArrayList<Pet>{
             }
         }
         throw new IllegalArgumentException("This collection does not contain any pet with Id: " + id);
+    }
+
+    public boolean isIdUnique(UUID id){
+        for(Pet pet: this){
+            if(pet.getId().equals(id)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean isNameUnique(String name){
+        for(Pet pet: this){
+            if(pet.getName().equals(name)){
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
