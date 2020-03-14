@@ -16,12 +16,6 @@ public class PetNameComparator implements Comparator<Pet> {
      */
     @Override
     public int compare(Pet first, Pet second) {
-        if(first.getName().compareTo(second.getName()) > 0){
-            return 1;
-        }
-        else if(first.getName().compareTo(second.getName()) < 0){
-            return -1;
-        }
-        return 0;
+        return first.getName().compareTo(second.getName());
     }
 }
